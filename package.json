@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Personalised utils",
   "main": "index.js",
+  "types": "./dist/index.d.ts",
   "author": "ZOOI",
   "scripts": {
     "build": "tsup"
