@@ -1,0 +1,15 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "Personalised utils",
+  "main": "index.js",
+  "author": "ZOOI",
+  "scripts": {
+    "build": "tsup"
+  },
+  "type": "module",
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
