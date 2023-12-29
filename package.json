@@ -2,7 +2,7 @@
   "name": "@ZOOIZOOI/utils",
   "version": "1.0.8",
   "description": "Personalised utils",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "ZOOI",
   "scripts": {
