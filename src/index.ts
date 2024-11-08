@@ -1,7 +1,11 @@
+// Modules
 import KeyboardHandler from './modules/KeyboardHandler/index';
 import LocalStorage from './modules/LocalStorage/index';
-
 export { KeyboardHandler, LocalStorage };
+
+// Misc
+import generateQuadraticBezierCurve from './generateQuadraticBezierCurve';
+export { generateQuadraticBezierCurve };
 
 export function distance2D(point1: { x: number, y: number }, point2: { x: number, y: number }): number {
     const a = point2.x - point1.x;
