@@ -5,6 +5,9 @@
   "description": "Personalised utils",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     ".": "./dist/index.js",
     "./modules/KeyboardHandler": "./src/modules/KeyboardHandler/index.ts"
