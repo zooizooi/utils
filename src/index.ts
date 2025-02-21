@@ -1,7 +1,8 @@
 // Modules
 import KeyboardHandler from './modules/KeyboardHandler/index';
 import LocalStorage from './modules/LocalStorage/index';
-export { KeyboardHandler, LocalStorage };
+import EventDispatcher from './modules/EventDispatcher/index';
+export { KeyboardHandler, LocalStorage, EventDispatcher };
 
 // Misc
 import generateQuadraticBezierCurve from './generateQuadraticBezierCurve';
