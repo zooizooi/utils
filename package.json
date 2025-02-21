@@ -1,6 +1,6 @@
 {
   "name": "@zooizooi/utils",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "author": "ZOOI",
   "description": "Personalised utils",
   "main": "./dist/index.js",
