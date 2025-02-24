@@ -1,4 +1,4 @@
-export type Data = string | number | boolean | object;
+export type Data = string | number | boolean | object | undefined;
 export type Listener = (data: Data) => void;
 
 export default class EventDispatcher {
