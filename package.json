@@ -10,7 +10,8 @@
   },
   "exports": {
     ".": "./dist/index.js",
-    "./modules/KeyboardHandler": "./src/modules/KeyboardHandler/index.ts"
+    "./modules/KeyboardHandler": "./src/modules/KeyboardHandler/index.ts",
+    "./modules/EventDispatcher": "./src/modules/EventDispatcher/index.ts"
   },
   "scripts": {
     "build": "tsup"

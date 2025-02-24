@@ -1,5 +1,5 @@
-type Data = string | number | boolean | object;
-type Listener = (data: Data) => void;
+export type Data = string | number | boolean | object;
+export type Listener = (data: Data) => void;
 
 export default class EventDispatcher {
     private listeners: { [key: string]: Listener[] } = {};

@@ -9,6 +9,7 @@ ni @zooizooi/utils
 ### Use
 ```js
 import { EventDispatcher } from '@zooizooi/utils';
+import { Listener, Data } from '@zooizooi/utils/modules/EventDispatcher';
 
 class Module extends EventDispatcher {
     constructor() {
