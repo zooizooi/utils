@@ -6,10 +6,15 @@ export default class LocalStorage {
         localStorage.setItem(key, value);
     }
 
-    public static get(key: string): string | object | null {
-        let value = localStorage.getItem(key);
-        if (value && this.isJSONObject(value)) value = JSON.parse(value);
-        return value;
+    public static get(key: string) {
+        const value = localStorage.getItem(key);
+        if (value) {
+            if (this.isJSONObject(value)) {
+                return JSON.parse(value);
+            } else {
+                return value;
+            }
+        }
     }
 
     public static remove(key: string) {
