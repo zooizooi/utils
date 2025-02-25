@@ -6,7 +6,7 @@ export default class LocalStorage {
         localStorage.setItem(key, value);
     }
 
-    public static get(key: string) {
+    public static get(key: string): string | object | null {
         let value = localStorage.getItem(key);
         if (value && this.isJSONObject(value)) value = JSON.parse(value);
         return value;
