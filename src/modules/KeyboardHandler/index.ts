@@ -52,10 +52,10 @@ export default class KeyboardHandler {
 
     private getKeyCombination(event: KeyboardEvent) {
         const keys = [];
-        if (event.ctrlKey) keys.push('Ctrl');
-        if (event.shiftKey) keys.push('Shift');
-        if (event.altKey) keys.push('Alt');
-        keys.push(event.key);
+        if (event.ctrlKey && event.code !== 'ControlLeft' && event.code !== 'ControlRight') keys.push('Ctrl');
+        if (event.shiftKey && event.code !== 'ShiftLeft' && event.code !== 'ShiftRight') keys.push('Shift');
+        if (event.altKey && event.code !== 'AltLeft' && event.code !== 'AltRight') keys.push('Alt');
+        keys.push(event.code);
         return keys.join('+');
     }
 
